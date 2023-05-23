@@ -19,9 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="src\code\browser\" />
-    <Folder Include="src\code\test\" />
-    <Folder Include="src\code\page\" />
+    <Folder Include="src\code\page\yopmail\" />
+    <Folder Include="src\code\test\yopmail\" />
   </ItemGroup>
 
 </Project>

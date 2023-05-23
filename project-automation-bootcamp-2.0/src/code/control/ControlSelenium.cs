@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using project_automation_bootcamp_2._0.src.code.session;
 using System;
 using System.Collections.Generic;
@@ -40,6 +41,18 @@ namespace project_automation_bootcamp_2._0.src.code.control
             {
                 return false;
             }
+        }
+
+        public string GetText()
+        {
+            FindControl();
+            return control.Text;
+        }
+
+        public void waitControlIsNotVisibleElement()
+        {
+            WebDriverWait explicitWait = new WebDriverWait(Session.Instance().GetBrowser(), TimeSpan.FromSeconds(10));
+            explicitWait.Until(e => e.FindElement(this.locator));
         }
     }
 }
