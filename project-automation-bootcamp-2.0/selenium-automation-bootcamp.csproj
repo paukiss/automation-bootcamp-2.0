@@ -18,9 +18,4 @@
     <PackageReference Include="Selenium.WebDriver" Version="4.9.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="src\code\page\yopmail\" />
-    <Folder Include="src\code\test\yopmail\" />
-  </ItemGroup>
-
 </Project>
