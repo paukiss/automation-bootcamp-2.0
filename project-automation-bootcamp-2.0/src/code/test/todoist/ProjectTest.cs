@@ -27,9 +27,7 @@ namespace project_automation_bootcamp_2._0.src.code.test.todoist
             string updateNameProject = "Update name project";
 
             loginSession.loginButton.Click();
-            loginPageSession.emailTxt.SetText(user);
-            loginPageSession.pwdTxt.SetText(pass);
-            loginPageSession.loginButton.Click();
+            loginPageSession.Login(user, pass);
             mainPage.projectLabel.waitControlIsNotVisibleElement();
             Assert.IsTrue(mainPage.projectLabel.IsControlDisplayed(), "Error! Log in failed");
 
